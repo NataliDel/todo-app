@@ -4,8 +4,11 @@ import Button from "../../../../components/button/Button";
 function TodoItem({ todoItem, handleChangeCheckbox }) {
   return (
     <div>
-      <Checkbox todoItem={todoItem} />
-      <Button />
+      <Checkbox
+        todoItem={todoItem}
+        handleChangeCheckbox={handleChangeCheckbox}
+      />
+      <Button buttonValue={"Löschen"} />
     </div>
   );
 }
