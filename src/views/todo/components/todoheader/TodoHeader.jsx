@@ -1,9 +1,10 @@
 import Input from "../../../../components/input/Input";
 import Button from "../../../../components/button/Button";
 import { useState } from "react";
+import "./TodoHeader.css";
 
-function TodoHeader(addTodoItemToList) {
-  const [inputValue, setInputValue] = useState(" ");
+function TodoHeader({ addTodoItemToList }) {
+  const [inputValue, setInputValue] = useState("");
 
   function handleInputChangeEvent(event) {
     setInputValue(event.target.value);
@@ -11,11 +12,11 @@ function TodoHeader(addTodoItemToList) {
   }
   function handleAddTodoItemEvent() {
     addTodoItemToList({ id: Math.random(), content: inputValue, done: false });
-    setInputValue(" ");
+    setInputValue("");
   }
 
   return (
-    <div>
+    <div class="todo-header">
       <Input
         inputValue={inputValue}
         handleInputChangeEvent={handleInputChangeEvent}

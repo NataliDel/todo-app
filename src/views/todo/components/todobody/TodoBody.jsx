@@ -1,12 +1,15 @@
 import TodoItem from "../todoitem/TodoItem";
 
-function TodoBody({ todos, handleChangeCheckbox }) {
+function TodoBody({ todos, handleChangeCheckbox, deleteTodoItemFromList }) {
   return (
     <div>
       {todos.map((todo) => (
-        <TodoItem todoItem={todo} handleChangeCheckbox={handleChangeCheckbox} />
+        <TodoItem
+          todoItem={todo}
+          handleChangeCheckbox={handleChangeCheckbox}
+          deleteTodoItemFromList={deleteTodoItemFromList}
+        />
       ))}
-      ;
     </div>
   );
 }
