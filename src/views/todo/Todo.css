@@ -1,4 +1,6 @@
 #todo-view {
-  background-color: red;
+  background-color: var(--dark-shade);
   height: 100vh;
+  display: flex;
+  justify-content: center;
 }

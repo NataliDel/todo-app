@@ -6,3 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+:root {
+  --primary: #a18fbc;
+  --secondary: #edba5f;
+  --light-shade: #f5f6f3;
+  --dark-shade: #443b61;
+  --dark-shade-shadow: #302a45;
+  --dark-accent: #a38aa3;
+}
